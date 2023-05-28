@@ -1,9 +1,5 @@
 #include "PlikZuzytkownikami.h"
 
-PlikZuzytkownikami::PlikZuzytkownikami()
-{
-    nazwaPlikuZUzytkownikami = "Uzytkownicy.txt";
-}
 
 bool PlikZuzytkownikami::czyPlikJestPusty(fstream &plikTekstowy)
 {
@@ -50,9 +46,10 @@ string PlikZuzytkownikami::zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowym
 }
 
 
-void PlikZuzytkownikami::wczytajUzytkownikowZPliku(vector <Uzytkownik> &uzytkownicy)
+vector <Uzytkownik> PlikZuzytkownikami::wczytajUzytkownikowZPliku()
 {
     Uzytkownik uzytkownik;
+    vector <Uzytkownik> uzytkownicy;
     string daneJednegoUzytkownikaOddzielonePionowymiKreskami = "";
 
     fstream plikTekstowy;
@@ -68,6 +65,8 @@ void PlikZuzytkownikami::wczytajUzytkownikowZPliku(vector <Uzytkownik> &uzytkown
 
     }
     plikTekstowy.close();
+
+    return uzytkownicy;
 }
 
 Uzytkownik PlikZuzytkownikami::pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowymiKreskami)
