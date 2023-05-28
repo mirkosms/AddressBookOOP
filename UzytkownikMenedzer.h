@@ -9,6 +9,7 @@
 
 #ifndef UZYTKOWNIKMENEDZER.h
 #define UZYTKOWNIKMENEDZER.h
+
 using namespace std;
 
 class UzytkownikMenedzer
@@ -24,6 +25,7 @@ class UzytkownikMenedzer
 public:
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
+    void wczytajUzytkownikowZPliku();
 };
 
 #endif // UZYTKOWNIKMENEDZER
