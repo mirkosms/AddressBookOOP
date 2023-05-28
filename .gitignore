@@ -1,1 +1,4 @@
 AddressBookOOP.*
+bin/
+obj/
+plan/
