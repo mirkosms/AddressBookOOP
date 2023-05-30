@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+
 #ifndef UZYTKOWNIK.h
 #define UZYTKOWNIK.h
 

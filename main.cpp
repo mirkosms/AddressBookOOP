@@ -4,13 +4,18 @@
 
 using namespace std;
 
+char wybierzOpcjeZMenuGlownego();
+
 int main()
 {
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy2.txt");
-    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
-    ksiazkaAdresowa.rejestracjaUzytkownika();
-    ksiazkaAdresowa.rejestracjaUzytkownika();
-    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+    //int idZalogowanegoUzytkownika = ksiazkaAdresowa.logowanieUzytkownika();
+    //ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika(1);
+    //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+
+    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownik.txt", "Adresaci.txt");
+    //ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+    //ksiazkaAdresowa.rejestracjaUzytkownika();
+    //ksiazkaAdresowa.logowanieUzytkownika();
 
     return 0;
 }
